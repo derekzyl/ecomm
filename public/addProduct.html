@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/logsign.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+
+    <title>add product</title>
+
+    <link
+      rel="shortcut icon"
+      type="image/icon"
+      href="assets/logo/favicon.png"
+    />
+
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="assets/css/linearicons.css" />
+
+    <link rel="stylesheet" href="assets/css/animate.css" />
+
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="assets/css/bootsnav.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <section class="vh-100" style="background-color: #9a616d">
+      <div id="alertBox"></div>
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col col-xl-10">
+            <div class="card" style="border-radius: 1rem">
+              <div class="row g-0">
+                <div class="col-md-6 col-lg-5 d-none d-md-block">
+                  <img
+                    src="https://images.pexels.com/photos/1666738/pexels-photo-1666738.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="login form"
+                    class="img-fluid"
+                    style="border-radius: 1rem 0 0 1rem"
+                  />
+                </div>
+                <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                  <div class="card-body p-4 p-lg-5 text-black">
+                    <form>
+                      <div class="d-flex align-items-center mb-3 pb-1">
+                        <span class="h1 fw-bold mb-0">
+                          <a href="index.html">
+                            <img
+                              width="100px"
+                              height="100px"
+                              src="./assets/images/collection/logoj.png"
+                              alt="logoj"
+                            />
+                          </a>
+                        </span>
+                      </div>
+
+                      <h5
+                        class="fw-normal mb-3 pb-3"
+                        style="letter-spacing: 1px"
+                      >
+                        add product
+                      </h5>
+
+                      <div class="form-outline mb-4">
+                        <input
+                          type="text"
+                          id="name"
+                          placeholder="product name"
+                          class="form-control form-control-lg"
+                        />
+                        <label class="form-label" for="name"
+                          >product name</label
+                        >
+                      </div>
+
+                      <div></div>
+
+                      <div class="form-outline mb-4">
+                        <textarea
+                          type="text"
+                          id="details"
+                          placeholder="product  details"
+                          class="form-control form-control-lg"
+                        >
+product details</textarea
+                        >
+                        <label class="form-label" for=" details"
+                          >product details</label
+                        >
+                      </div>
+                      <div></div>
+
+                      <div class="form-outline mb-4">
+                        <input
+                          type="text"
+                          id="price"
+                          placeholder="product price"
+                          class="form-control form-control-lg"
+                        />
+                        <label class="form-label" for="price"
+                          >product price</label
+                        >
+                      </div>
+                      <div></div>
+
+                      <div class="form-outline mb-4">
+                        <input
+                          type="text"
+                          id="image"
+                          placeholder="product image url"
+                          class="form-control form-control-lg"
+                        />
+                        <label class="form-label" for="image"
+                          >product Image Url</label
+                        >
+                      </div>
+                      <div></div>
+
+                      <div class="form-outline mb-4">
+                        <input
+                          type="text"
+                          id="quantity"
+                          placeholder="quantity"
+                          class="form-control form-control-lg"
+                        />
+                        <label class="form-label" for="quantity"
+                          >product quantity</label
+                        >
+                      </div>
+                      <div></div>
+
+                      <div class="form-outline mb-4">
+                        <input
+                          type="password"
+                          id="adminPass"
+                          placeholder="admin password"
+                          class="form-control form-control-lg"
+                        />
+                        <label class="form-label" for="adminPass"
+                          >admin password</label
+                        >
+                      </div>
+                      <div></div>
+
+                      <div class="pt-1 mb-4">
+                        <button
+                          class="submit-btn btn btn-dark btn-lg btn-block"
+                          type="button"
+                        >
+                          add product
+                        </button>
+                      </div>
+
+                      <div id="productResponse"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/jquery.js"></script>
+
+    <!--modernizr.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+    <!--bootstrap.min.js-->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- bootsnav js -->
+    <script src="assets/js/bootsnav.js"></script>
+
+    <!--owl.carousel.js-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <!--Custom JS-->
+    <script src="assets/js/custom.js"></script>
+    <script src="./assets/js/pages/addProduct.js"></script>
+  </body>
+</html>
